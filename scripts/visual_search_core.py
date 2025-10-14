@@ -13,7 +13,7 @@ import faiss
 # ======================================================
 # --- Configuration (CRITICAL: Ensure URI is correct) ---
 # ======================================================
-MONGO_URI = "mongodb+srv://anandkumarvijay11:pGoJIWwIn26Yrzhv@cluster0.qja0w.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0" 
+MONGO_URI =os.environ.get("MONGO_URI")
 DATABASE_NAME = "fashion_matcher"
 COLLECTION_NAME = "products"
 MODEL_NAME = "openai/clip-vit-base-patch32"
