@@ -34,8 +34,12 @@ PRODUCTS_COLLECTION_NAME = 'products'
 # --- Product and Search Configuration ---
 PRODUCTS_PER_PAGE = 20
 EMBEDDING_DIMENSION = 512
-INDEX_FILENAME = "faiss_index.bin"
-PRODUCT_IDS_FILE = "product_ids.npy"
+# --- CRITICAL FIX: Determine file paths relative to the current script's directory ---
+# Get the absolute path of the directory containing this script (e.g., /app/scripts/)
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+# Construct the full, absolute path to the index files
+INDEX_FILENAME = os.path.join(BASE_DIR, "faiss_index.bin")
+PRODUCT_IDS_FILE = os.path.join(BASE_DIR, "product_ids.npy")
 MODEL_NAME = "openai/clip-vit-base-patch32"
 
 # Global components
