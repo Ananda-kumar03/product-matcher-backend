@@ -17,7 +17,7 @@ COLLECTION_NAME = "products"
 
 # --- Model Setup (Using OpenAI's CLIP) ---
 # CLIP is excellent for visual similarity search
-MODEL_NAME = "openai/clip-vit-base-patch32"
+MODEL_NAME = "openai/clip-base-patch16"
 device = "cuda" if torch.cuda.is_available() else "cpu"
 
 try:
