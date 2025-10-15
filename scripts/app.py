@@ -20,7 +20,7 @@ import random  # For random price generation
 
 # Initialize Flask App
 app = Flask(__name__)
-CORS(app)
+CORS(app, resources={r"/*": {"origins": "*"}})
 
 # --- MongoDB Setup ---
 MONGO_URI = os.environ.get("MONGO_URI")
