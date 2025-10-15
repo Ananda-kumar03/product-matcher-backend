@@ -18,8 +18,5 @@ User Management	MongoDB, bcrypt	Functional	Signup and Login routes with hashed p
 Product Browsing	MongoDB	Functional	Pagination for general product listing.
 Visual Search	CLIP, FAISS, PyTorch	Functional Locally	Disabled on Render due to model memory limits.
 
-Export to Sheets
-Deployment Links
-Platform	Role	Status	Link
 Live Frontend URL	User Interface	Live	https://visualproductsmatcher.netlify.app/
 Backend API URL	Render API (Base)	Live	https://visual-matcher-api-6qln.onrender.com
